@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		308744F6B1D4253B89A19EB1 /* Pods_DeltaDNANotifications_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B55E57F342A75AB1005728 /* Pods_DeltaDNANotifications_Example.framework */; };
+		317158C99C3A647E1F6D99E6 /* Pods_Notification_Content.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,9 +22,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		634F3B5E1FC33D6C001F0242 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */; };
+		634F3B601FC33D6C001F0242 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */; };
+		634F3B641FC33D6C001F0242 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634F3B631FC33D6C001F0242 /* NotificationViewController.m */; };
+		634F3B671FC33D6C001F0242 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634F3B651FC33D6C001F0242 /* MainInterface.storyboard */; };
+		634F3B6B1FC33D6D001F0242 /* Notification Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 634F3B5C1FC33D6C001F0242 /* Notification Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		DF693D17D256576803233AC4 /* Pods_DeltaDNANotifications_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +39,34 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = DeltaDNANotifications;
 		};
+		634F3B691FC33D6D001F0242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634F3B5B1FC33D6C001F0242;
+			remoteInfo = "Notification Content";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		634F3B6F1FC33D6D001F0242 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				634F3B6B1FC33D6D001F0242 /* Notification Content.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		095DF814168878BFA13840B0 /* Pods-DeltaDNANotifications_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Tests/Pods-DeltaDNANotifications_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2597C943508C569B6A4FF479 /* DeltaDNANotifications.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DeltaDNANotifications.podspec; path = ../DeltaDNANotifications.podspec; sourceTree = "<group>"; };
+		2597C943508C569B6A4FF479 /* DeltaDNANotifications.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeltaDNANotifications.podspec; path = ../DeltaDNANotifications.podspec; sourceTree = "<group>"; };
 		4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B55E57F342A75AB1005728 /* Pods_DeltaDNANotifications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1E72923780AD3327C095A1 /* Pods-Notification Content.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DeltaDNANotifications_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltaDNANotifications_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,12 +86,20 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6199CB3175687B4D5CD6ACEF /* Pods-DeltaDNANotifications_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Tests/Pods-DeltaDNANotifications_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6910E57F0D825D57A6161BE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		634F3B5C1FC33D6C001F0242 /* Notification Content.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notification Content.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		634F3B621FC33D6C001F0242 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		634F3B631FC33D6C001F0242 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		634F3B661FC33D6C001F0242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		634F3B681FC33D6C001F0242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6910E57F0D825D57A6161BE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notification_Content.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FB901A41F4F9A907D8F59F8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FB901A41F4F9A907D8F59F8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE5D7143C2683441B9B51D8C /* Pods-DeltaDNANotifications_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +122,16 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				DF693D17D256576803233AC4 /* Pods_DeltaDNANotifications_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634F3B591FC33D6C001F0242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634F3B601FC33D6C001F0242 /* UserNotificationsUI.framework in Frameworks */,
+				634F3B5E1FC33D6C001F0242 /* UserNotifications.framework in Frameworks */,
+				317158C99C3A647E1F6D99E6 /* Pods_Notification_Content.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +144,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for DeltaDNANotifications */,
 				6003F5B5195388D20070C39A /* Tests */,
+				634F3B611FC33D6C001F0242 /* Notification Content */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				E240115586E1DB528738A9A3 /* Pods */,
@@ -112,6 +156,7 @@
 			children = (
 				6003F58A195388D20070C39A /* DeltaDNANotifications_Example.app */,
 				6003F5AE195388D20070C39A /* DeltaDNANotifications_Tests.xctest */,
+				634F3B5C1FC33D6C001F0242 /* Notification Content.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +170,9 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				56B55E57F342A75AB1005728 /* Pods_DeltaDNANotifications_Example.framework */,
 				4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */,
+				634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */,
+				634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */,
+				AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,13 +233,24 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		634F3B611FC33D6C001F0242 /* Notification Content */ = {
+			isa = PBXGroup;
+			children = (
+				634F3B621FC33D6C001F0242 /* NotificationViewController.h */,
+				634F3B631FC33D6C001F0242 /* NotificationViewController.m */,
+				634F3B651FC33D6C001F0242 /* MainInterface.storyboard */,
+				634F3B681FC33D6C001F0242 /* Info.plist */,
+			);
+			path = "Notification Content";
+			sourceTree = "<group>";
+		};
 		E240115586E1DB528738A9A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FE5D7143C2683441B9B51D8C /* Pods-DeltaDNANotifications_Example.debug.xcconfig */,
 				B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */,
-				6199CB3175687B4D5CD6ACEF /* Pods-DeltaDNANotifications_Tests.debug.xcconfig */,
-				095DF814168878BFA13840B0 /* Pods-DeltaDNANotifications_Tests.release.xcconfig */,
+				5C1E72923780AD3327C095A1 /* Pods-Notification Content.debug.xcconfig */,
+				7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,10 +268,12 @@
 				6003F588195388D20070C39A /* Resources */,
 				2652BEBD60AFA5BAACAA33BB /* [CP] Embed Pods Frameworks */,
 				E396A22BB97396732CB3BA39 /* [CP] Copy Pods Resources */,
+				634F3B6F1FC33D6D001F0242 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				634F3B6A1FC33D6D001F0242 /* PBXTargetDependency */,
 			);
 			name = DeltaDNANotifications_Example;
 			productName = DeltaDNANotifications;
@@ -223,12 +284,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNANotifications_Tests" */;
 			buildPhases = (
-				CD6E70D36E637B25AB491D56 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				9C95B6B1F7F4A7353FBA41EB /* [CP] Embed Pods Frameworks */,
-				C60D17FAB5DBEC14EB90DFDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +298,25 @@
 			productReference = 6003F5AE195388D20070C39A /* DeltaDNANotifications_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		634F3B5B1FC33D6C001F0242 /* Notification Content */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634F3B6C1FC33D6D001F0242 /* Build configuration list for PBXNativeTarget "Notification Content" */;
+			buildPhases = (
+				55A66C05B5FD55CAE36B20B0 /* [CP] Check Pods Manifest.lock */,
+				634F3B581FC33D6C001F0242 /* Sources */,
+				634F3B591FC33D6C001F0242 /* Frameworks */,
+				634F3B5A1FC33D6C001F0242 /* Resources */,
+				3F526E1BF191B443FC2A866B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notification Content";
+			productName = "Notification Content";
+			productReference = 634F3B5C1FC33D6C001F0242 /* Notification Content.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,8 +327,16 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dwxw;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 846C8UZB42;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					634F3B5B1FC33D6C001F0242 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 846C8UZB42;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -270,6 +355,7 @@
 			targets = (
 				6003F589195388D20070C39A /* DeltaDNANotifications_Example */,
 				6003F5AD195388D20070C39A /* DeltaDNANotifications_Tests */,
+				634F3B5B1FC33D6C001F0242 /* Notification Content */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +380,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		634F3B5A1FC33D6C001F0242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634F3B671FC33D6C001F0242 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -304,15 +398,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeltaDNA/DeltaDNA.framework",
 				"${BUILT_PRODUCTS_DIR}/DeltaDNANotifications/DeltaDNANotifications.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNA.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNANotifications.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F526E1BF191B443FC2A866B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		41C47A8D0493AB2BF2BDC2A4 /* [CP] Check Pods Manifest.lock */ = {
@@ -333,46 +444,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9C95B6B1F7F4A7353FBA41EB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Tests/Pods-DeltaDNANotifications_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
-				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Tests/Pods-DeltaDNANotifications_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C60D17FAB5DBEC14EB90DFDE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Tests/Pods-DeltaDNANotifications_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD6E70D36E637B25AB491D56 /* [CP] Check Pods Manifest.lock */ = {
+		55A66C05B5FD55CAE36B20B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,7 +455,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DeltaDNANotifications_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Notification Content-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -426,6 +498,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		634F3B581FC33D6C001F0242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634F3B641FC33D6C001F0242 /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -433,6 +513,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* DeltaDNANotifications_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		634F3B6A1FC33D6D001F0242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 634F3B5B1FC33D6C001F0242 /* Notification Content */;
+			targetProxy = 634F3B691FC33D6D001F0242 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -451,6 +536,14 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		634F3B651FC33D6C001F0242 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				634F3B661FC33D6C001F0242 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
@@ -542,6 +635,8 @@
 			baseConfigurationReference = FE5D7143C2683441B9B51D8C /* Pods-DeltaDNANotifications_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 846C8UZB42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNANotifications-Prefix.pch";
 				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNANotifications-Info.plist";
@@ -557,6 +652,8 @@
 			baseConfigurationReference = B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 846C8UZB42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNANotifications-Prefix.pch";
 				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNANotifications-Info.plist";
@@ -569,7 +666,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6199CB3175687B4D5CD6ACEF /* Pods-DeltaDNANotifications_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -593,7 +689,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 095DF814168878BFA13840B0 /* Pods-DeltaDNANotifications_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -608,6 +703,79 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaDNANotifications_Example.app/DeltaDNANotifications_Example";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		634F3B6D1FC33D6D001F0242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1E72923780AD3327C095A1 /* Pods-Notification Content.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 846C8UZB42;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Notification Content/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.DeltaDNANotifications-Example.Notification-Content";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		634F3B6E1FC33D6D001F0242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 846C8UZB42;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Notification Content/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.DeltaDNANotifications-Example.Notification-Content";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -637,6 +805,15 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634F3B6C1FC33D6D001F0242 /* Build configuration list for PBXNativeTarget "Notification Content" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634F3B6D1FC33D6D001F0242 /* Debug */,
+				634F3B6E1FC33D6D001F0242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

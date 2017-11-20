@@ -7,12 +7,20 @@
 //
 
 #import "DDNAAppDelegate.h"
+#import <DeltaDNA/DeltaDNA.h>
+#import <UserNotifications/UserNotifications.h>
+
+// Allow's us to override notification appearing in the foreground
+@interface DDNAAppDelegate () <UNUserNotificationCenterDelegate>
+
+@end
 
 @implementation DDNAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self setupPushNotifications];
+    
     return YES;
 }
 
@@ -42,5 +50,49 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)setupPushNotifications
+{
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    center.delegate = self;
+    
+    [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted) {
+
+            UNNotificationAction *stopAction = [UNNotificationAction actionWithIdentifier:@"com.deltadna.stopAction" title:@"Stop Notifications" options:UNNotificationActionOptionDestructive];
+            
+            UNNotificationCategory *diagnosticCategory = [UNNotificationCategory categoryWithIdentifier:@"com.deltadna.diagnosticCategory" actions:@[stopAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionNone];
+            
+            UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+            [center setNotificationCategories:[NSSet setWithObjects:diagnosticCategory, nil]];
+            
+            dispatch_async(dispatch_get_main_queue(), ^(void) {
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            });
+        }
+    }];
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    // pass token back into our sdk.
+    [DDNASDK sharedInstance].pushNotificationToken = [deviceToken description];
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+    NSLog(@"Failed to get token, error: %@", error);
+}
+
+#pragma mark - UNUserNotificationCenterDelegate
+
+// Allow diagnostic notifications to appear when in the foreground.
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler
+{
+    if ([notification.request.content.categoryIdentifier isEqualToString:@"com.deltadna.diagnosticCategory"]) {
+        completionHandler(UNNotificationPresentationOptionAlert);
+    }
+}
+
 
 @end

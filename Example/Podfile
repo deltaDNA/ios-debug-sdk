@@ -1,14 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/deltaDNA/CocoaPods.git'
+
+platform :ios, '10.0'
 use_frameworks!
 
 target 'DeltaDNANotifications_Example' do
-  pod 'DeltaDNANotifications', :path => '../'
+  pod 'DeltaDNA', '~> 4.6.1'
+end
 
-  target 'DeltaDNANotifications_Tests' do
-    inherit! :search_paths
-
-    pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
-  end
+target 'Notification Content' do
+    pod 'DeltaDNANotifications', :path => '../'
 end

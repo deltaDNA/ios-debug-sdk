@@ -29,6 +29,9 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.requires_arc = true
+  s.platform = :ios, '10.0'
+  s.weak_frameworks = 'UserNotifications', 'UIKit'
 
   s.source_files = 'DeltaDNANotifications/Classes/**/*'
   
