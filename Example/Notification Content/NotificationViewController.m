@@ -9,6 +9,7 @@
 #import "NotificationViewController.h"
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
+#import <DeltaDNANotifications/DDNAHelloWorld.h>
 
 @interface NotificationViewController () <UNNotificationContentExtension>
 
@@ -21,6 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any required interface initialization here.
+}
+
+// Add this in to launch our custom storyboard
+- (void)viewDidAppear:(BOOL)animated
+{
+    [DDNAHelloWorld sequeToFrameworkViewControllerFromViewController:self];
 }
 
 - (void)didReceiveNotification:(UNNotification *)notification {

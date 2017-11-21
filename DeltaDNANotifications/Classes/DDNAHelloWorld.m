@@ -6,6 +6,8 @@
 //
 
 #import "DDNAHelloWorld.h"
+#import "DDNANotificationViewController.h"
+#import <UIKit/UIKit.h>
 
 @implementation DDNAHelloWorld
 
@@ -22,6 +24,16 @@
 - (void)helloWorld
 {
     NSLog(@"Hello World!");
+}
+
++ (void)sequeToFrameworkViewControllerFromViewController:(UIViewController *)caller
+{
+    NSBundle *podBundle = [NSBundle bundleForClass:[DDNANotificationViewController class]];
+    NSURL *bundleURL = [podBundle URLForResource:@"DeltaDNANotifications" withExtension:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainInterface2" bundle:bundle];
+    UIViewController *viewController = [storyboard instantiateInitialViewController];
+    [caller presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

@@ -13,4 +13,6 @@
 
 - (void)helloWorld;
 
++ (void)sequeToFrameworkViewControllerFromViewController:(UIViewController *)caller;
+
 @end
