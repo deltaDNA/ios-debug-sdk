@@ -7,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseNotificationViewController : UIViewController
+@interface DDNADebugContentViewController : UIViewController
 
 @end

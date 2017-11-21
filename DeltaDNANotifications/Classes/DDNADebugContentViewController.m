@@ -5,13 +5,13 @@
 //  Created by David White on 21/11/2017.
 //
 
-#import "BaseNotificationViewController.h"
+#import "DDNADebugContentViewController.h"
 
-@interface BaseNotificationViewController ()
+@interface DDNADebugContentViewController ()
 
 @end
 
-@implementation BaseNotificationViewController
+@implementation DDNADebugContentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

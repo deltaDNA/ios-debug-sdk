@@ -9,9 +9,8 @@
 #import "NotificationViewController.h"
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
-#import <DeltaDNANotifications/DDNAHelloWorld.h>
 
-@interface NotificationViewController () /*<UNNotificationContentExtension>*/
+@interface NotificationViewController ()
 
 @property IBOutlet UILabel *label;
 
@@ -23,15 +22,5 @@
     [super viewDidLoad];
     // Do any required interface initialization here.
 }
-
-// Add this in to launch our custom storyboard
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    [DDNAHelloWorld sequeToFrameworkViewControllerFromViewController:self];
-//}
-
-//- (void)didReceiveNotification:(UNNotification *)notification {
-//    self.label.text = notification.request.content.body;
-//}
 
 @end

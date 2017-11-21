@@ -13,7 +13,7 @@
         <!--Notification View Controller-->
         <scene sceneID="SAq-Yg-rwN">
             <objects>
-                <viewController id="bgk-gA-qjM" userLabel="Notification View Controller" customClass="BaseNotificationViewController" sceneMemberID="viewController">
+                <viewController id="bgk-gA-qjM" userLabel="Notification View Controller" customClass="DDNADebugContentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="DI0-hq-2sK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
