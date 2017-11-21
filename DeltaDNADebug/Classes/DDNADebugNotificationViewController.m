@@ -49,7 +49,7 @@
 - (UIViewController *)viewControllerForStoryboardWithName:(NSString *)name
 {
     NSBundle *podBundle = [NSBundle bundleForClass:[DDNADebugNotificationViewController class]];
-    NSURL *bundleURL = [podBundle URLForResource: @"DeltaDNANotifications" withExtension:@"bundle"];
+    NSURL *bundleURL = [podBundle URLForResource: @"DeltaDNADebug" withExtension:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:bundle];
     UIViewController *viewController = [storyboard instantiateInitialViewController];

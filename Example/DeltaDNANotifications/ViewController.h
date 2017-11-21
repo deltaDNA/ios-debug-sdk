@@ -1,5 +1,5 @@
 //
-//  DDNAAppDelegate.h
+//  DDNAViewController.h
 //  DeltaDNANotifications
 //
 //  Created by dwxw on 11/17/2017.
@@ -8,8 +8,6 @@
 
 @import UIKit;
 
-@interface DDNAAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ViewController : UIViewController
 
 @end

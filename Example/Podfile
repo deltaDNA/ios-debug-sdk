@@ -4,10 +4,10 @@ source 'https://github.com/deltaDNA/CocoaPods.git'
 platform :ios, '10.0'
 use_frameworks!
 
-target 'DeltaDNANotifications_Example' do
+target 'DeltaDNADebug_Example' do
   pod 'DeltaDNA', '~> 4.6.1'
 end
 
 target 'Notification Content' do
-    pod 'DeltaDNANotifications', :path => '../'
+    pod 'DeltaDNADebug', :path => '../'
 end

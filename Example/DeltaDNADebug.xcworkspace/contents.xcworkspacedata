@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/david/Projects/ios-debug-sdk/Example/DeltaDNADebug.xcodeproj">
+      location = "group:DeltaDNADebug.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

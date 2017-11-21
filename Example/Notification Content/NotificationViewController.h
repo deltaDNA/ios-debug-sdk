@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DeltaDNANotifications/DDNADebugNotificationViewController.h>
+#import <DeltaDNADebug/DDNADebugNotificationViewController.h>
 
 @interface NotificationViewController : DDNADebugNotificationViewController
 

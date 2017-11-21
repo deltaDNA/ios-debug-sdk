@@ -6,16 +6,16 @@
 //  Copyright (c) 2017 dwxw. All rights reserved.
 //
 
-#import "DDNAAppDelegate.h"
+#import "AppDelegate.h"
 #import <DeltaDNA/DeltaDNA.h>
 #import <UserNotifications/UserNotifications.h>
 
 // Allow's us to override notification appearing in the foreground
-@interface DDNAAppDelegate () <UNUserNotificationCenterDelegate>
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
 
-@implementation DDNAAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

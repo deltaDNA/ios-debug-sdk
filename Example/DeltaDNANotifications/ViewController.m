@@ -6,17 +6,17 @@
 //  Copyright (c) 2017 dwxw. All rights reserved.
 //
 
-#import "DDNAViewController.h"
+#import "ViewController.h"
 #import <UserNotifications/UserNotifications.h>
 
-@interface DDNAViewController ()
+@interface ViewController ()
 
 - (IBAction)sendDiagnostic:(id)sender;
 
 
 @end
 
-@implementation DDNAViewController
+@implementation ViewController
 
 - (void)viewDidLoad
 {

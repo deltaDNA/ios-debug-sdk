@@ -14,8 +14,8 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* DDNAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DDNAAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* DDNAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DDNAViewController.m */; };
+		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
+		6003F5A7195388D20070C39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -29,6 +29,7 @@
 		634F3B6B1FC33D6D001F0242 /* Notification Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 634F3B5C1FC33D6C001F0242 /* Notification Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E41E80CE3501E96A9D2E0B28 /* Pods_DeltaDNADebug_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053A55053364E2C60753B13B /* Pods_DeltaDNADebug_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,24 +64,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		053A55053364E2C60753B13B /* Pods_DeltaDNADebug_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNADebug_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2597C943508C569B6A4FF479 /* DeltaDNANotifications.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeltaDNANotifications.podspec; path = ../DeltaDNANotifications.podspec; sourceTree = "<group>"; };
 		4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B55E57F342A75AB1005728 /* Pods_DeltaDNANotifications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1E72923780AD3327C095A1 /* Pods-Notification Content.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* DeltaDNANotifications_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltaDNANotifications_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* DeltaDNADebug_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltaDNADebug_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* DeltaDNANotifications-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeltaDNANotifications-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* DeltaDNADebug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeltaDNADebug-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* DeltaDNANotifications-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaDNANotifications-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* DDNAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDNAAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* DDNAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDNAAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* DDNAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDNAViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* DDNAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDNAViewController.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* DeltaDNADebug-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaDNADebug-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* DeltaDNANotifications_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaDNANotifications_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* DeltaDNADebug_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaDNADebug_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -97,6 +99,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BE81CDA5137F3357419DF11 /* Pods-DeltaDNADebug_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AAF680DE8AB27811F49E23E0 /* Pods-DeltaDNADebug_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notification_Content.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB901A41F4F9A907D8F59F8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				308744F6B1D4253B89A19EB1 /* Pods_DeltaDNANotifications_Example.framework in Frameworks */,
+				E41E80CE3501E96A9D2E0B28 /* Pods_DeltaDNADebug_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for DeltaDNANotifications */,
+				6003F593195388D20070C39A /* Example for DeltaDNADebug */,
 				6003F5B5195388D20070C39A /* Tests */,
 				634F3B611FC33D6C001F0242 /* Notification Content */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -154,8 +159,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* DeltaDNANotifications_Example.app */,
-				6003F5AE195388D20070C39A /* DeltaDNANotifications_Tests.xctest */,
+				6003F58A195388D20070C39A /* DeltaDNADebug_Example.app */,
+				6003F5AE195388D20070C39A /* DeltaDNADebug_Tests.xctest */,
 				634F3B5C1FC33D6C001F0242 /* Notification Content.appex */,
 			);
 			name = Products;
@@ -173,33 +178,34 @@
 				634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */,
 				634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */,
 				AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */,
+				053A55053364E2C60753B13B /* Pods_DeltaDNADebug_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for DeltaDNANotifications */ = {
+		6003F593195388D20070C39A /* Example for DeltaDNADebug */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* DDNAAppDelegate.h */,
-				6003F59D195388D20070C39A /* DDNAAppDelegate.m */,
+				6003F59C195388D20070C39A /* AppDelegate.h */,
+				6003F59D195388D20070C39A /* AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* DDNAViewController.h */,
-				6003F5A6195388D20070C39A /* DDNAViewController.m */,
+				6003F5A5195388D20070C39A /* ViewController.h */,
+				6003F5A6195388D20070C39A /* ViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for DeltaDNANotifications";
+			name = "Example for DeltaDNADebug";
 			path = DeltaDNANotifications;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* DeltaDNANotifications-Info.plist */,
+				6003F595195388D20070C39A /* DeltaDNADebug-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* DeltaDNANotifications-Prefix.pch */,
+				6003F59B195388D20070C39A /* DeltaDNADebug-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,6 +257,8 @@
 				B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */,
 				5C1E72923780AD3327C095A1 /* Pods-Notification Content.debug.xcconfig */,
 				7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */,
+				AAF680DE8AB27811F49E23E0 /* Pods-DeltaDNADebug_Example.debug.xcconfig */,
+				8BE81CDA5137F3357419DF11 /* Pods-DeltaDNADebug_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -258,9 +266,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* DeltaDNANotifications_Example */ = {
+		6003F589195388D20070C39A /* DeltaDNADebug_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNANotifications_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNADebug_Example" */;
 			buildPhases = (
 				41C47A8D0493AB2BF2BDC2A4 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -275,14 +283,14 @@
 			dependencies = (
 				634F3B6A1FC33D6D001F0242 /* PBXTargetDependency */,
 			);
-			name = DeltaDNANotifications_Example;
+			name = DeltaDNADebug_Example;
 			productName = DeltaDNANotifications;
-			productReference = 6003F58A195388D20070C39A /* DeltaDNANotifications_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* DeltaDNADebug_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* DeltaDNANotifications_Tests */ = {
+		6003F5AD195388D20070C39A /* DeltaDNADebug_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNANotifications_Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNADebug_Tests" */;
 			buildPhases = (
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
@@ -293,9 +301,9 @@
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = DeltaDNANotifications_Tests;
+			name = DeltaDNADebug_Tests;
 			productName = DeltaDNANotificationsTests;
-			productReference = 6003F5AE195388D20070C39A /* DeltaDNANotifications_Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* DeltaDNADebug_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		634F3B5B1FC33D6C001F0242 /* Notification Content */ = {
@@ -340,7 +348,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "DeltaDNANotifications" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "DeltaDNADebug" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -353,8 +361,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* DeltaDNANotifications_Example */,
-				6003F5AD195388D20070C39A /* DeltaDNANotifications_Tests */,
+				6003F589195388D20070C39A /* DeltaDNADebug_Example */,
+				6003F5AD195388D20070C39A /* DeltaDNADebug_Tests */,
 				634F3B5B1FC33D6C001F0242 /* Notification Content */,
 			);
 		};
@@ -397,18 +405,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeltaDNA/DeltaDNA.framework",
-				"${BUILT_PRODUCTS_DIR}/DeltaDNANotifications/DeltaDNANotifications.framework",
+				"${BUILT_PRODUCTS_DIR}/DeltaDNADebug/DeltaDNADebug.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNA.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNANotifications.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNADebug.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3F526E1BF191B443FC2A866B /* [CP] Copy Pods Resources */ = {
@@ -417,9 +425,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -437,7 +448,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DeltaDNANotifications_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DeltaDNADebug_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,13 +479,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -484,8 +498,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* DDNAAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* DDNAViewController.m in Sources */,
+				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +525,7 @@
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* DeltaDNANotifications_Example */;
+			target = 6003F589195388D20070C39A /* DeltaDNADebug_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
 		634F3B6A1FC33D6D001F0242 /* PBXTargetDependency */ = {
@@ -632,16 +646,16 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE5D7143C2683441B9B51D8C /* Pods-DeltaDNANotifications_Example.debug.xcconfig */;
+			baseConfigurationReference = AAF680DE8AB27811F49E23E0 /* Pods-DeltaDNADebug_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 846C8UZB42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNANotifications-Prefix.pch";
-				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNANotifications-Info.plist";
+				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNADebug-Prefix.pch";
+				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNADebug-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltadna.ios.DeltaDNADebug-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -649,16 +663,16 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */;
+			baseConfigurationReference = 8BE81CDA5137F3357419DF11 /* Pods-DeltaDNADebug_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 846C8UZB42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNANotifications-Prefix.pch";
-				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNANotifications-Info.plist";
+				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNADebug-Prefix.pch";
+				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNADebug-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltadna.ios.DeltaDNADebug-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -682,7 +696,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaDNANotifications_Example.app/DeltaDNANotifications_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaDNADebug_Example.app/DeltaDNADebug_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -701,7 +715,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaDNANotifications_Example.app/DeltaDNANotifications_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaDNADebug_Example.app/DeltaDNADebug_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -735,7 +749,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.DeltaDNANotifications-Example.Notification-Content";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltadna.ios.DeltaDNADebug-Example.Notification-Content";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -772,7 +786,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.DeltaDNANotifications-Example.Notification-Content";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltadna.ios.DeltaDNADebug-Example.Notification-Content";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -782,7 +796,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "DeltaDNANotifications" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "DeltaDNADebug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -791,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNANotifications_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNADebug_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -800,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNANotifications_Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNADebug_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
