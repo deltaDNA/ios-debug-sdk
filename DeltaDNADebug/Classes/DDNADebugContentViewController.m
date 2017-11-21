@@ -9,6 +9,10 @@
 
 @interface DDNADebugContentViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *interstitialState;
+@property (weak, nonatomic) IBOutlet UILabel *rewardedState;
+
+
 @end
 
 @implementation DDNADebugContentViewController
@@ -21,6 +25,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)didReceiveNotification:(UNNotification *)notification {
+    self.interstitialState.text = notification.request.content.userInfo[@"interstitial"];
+    self.rewardedState.text = notification.request.content.userInfo[@"rewarded"];
+}
+
+- (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion
+{
+    
 }
 
 /*

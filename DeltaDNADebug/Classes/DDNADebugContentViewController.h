@@ -6,7 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
+#import <UserNotificationsUI/UserNotificationsUI.h>
 
 @interface DDNADebugContentViewController : UIViewController
+
+- (void)didReceiveNotification:(UNNotification *)notification;
 
 @end

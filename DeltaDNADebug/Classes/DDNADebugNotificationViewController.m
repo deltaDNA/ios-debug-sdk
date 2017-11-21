@@ -12,8 +12,6 @@
 
 @interface DDNADebugNotificationViewController () <UNNotificationContentExtension>
 
-@property IBOutlet UILabel *label;
-
 @property (nonatomic, strong) DDNADebugContentViewController *contentViewController;
 
 @end
@@ -38,7 +36,7 @@
 }
 
 - (void)didReceiveNotification:(UNNotification *)notification {
-    self.label.text = notification.request.content.body;
+    [self.contentViewController didReceiveNotification:notification];
 }
 
 - (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion
@@ -61,7 +59,9 @@
     if (self.contentViewController != nil) return;
     
     [self addChildViewController:viewController];
-    viewController.view.frame = self.view.frame;
+    //viewController.view.frame = self.view.frame;
+    self.view.frame = viewController.view.frame;
+    self.preferredContentSize = viewController.preferredContentSize;
     [self.view addSubview:viewController.view];
     [viewController didMoveToParentViewController:self];
     self.contentViewController = viewController;

@@ -36,7 +36,10 @@
     content.categoryIdentifier = @"com.deltadna.diagnosticCategory";
     content.title = [NSString localizedUserNotificationStringForKey:@"deltaDNA SDK" arguments:nil];
     content.body = @"test message!";
-    content.userInfo = @{@"userId": @"123"};
+    content.userInfo = @{
+        @"interstitial": @"Loaded INMOBI ad",
+        @"rewarded": @"Loaded Vungle ad"
+    };
     
     // When to launch the notification
     UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
