@@ -196,7 +196,7 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DeltaDNADebug";
-			path = DeltaDNANotifications;
+			path = DeltaDNADebug;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
@@ -652,8 +652,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 846C8UZB42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNADebug-Prefix.pch";
-				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNADebug-Info.plist";
+				GCC_PREFIX_HEADER = "DeltaDNADebug/DeltaDNADebug-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DeltaDNADebug/DeltaDNADebug-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deltadna.ios.DeltaDNADebug-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -669,8 +669,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 846C8UZB42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeltaDNANotifications/DeltaDNADebug-Prefix.pch";
-				INFOPLIST_FILE = "DeltaDNANotifications/DeltaDNADebug-Info.plist";
+				GCC_PREFIX_HEADER = "DeltaDNADebug/DeltaDNADebug-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DeltaDNADebug/DeltaDNADebug-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deltadna.ios.DeltaDNADebug-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
