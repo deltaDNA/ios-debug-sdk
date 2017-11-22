@@ -2,10 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/deltaDNA/CocoaPods.git'
 
 platform :ios, '10.0'
-use_frameworks!
+#use_frameworks!
 
 target 'DeltaDNADebug_Example' do
-  pod 'DeltaDNA', '~> 4.6.1'
+    pod 'DeltaDNAAds', :path => '~/Projects/ios-smartads-sdk'
 end
 
 target 'Notification Content' do

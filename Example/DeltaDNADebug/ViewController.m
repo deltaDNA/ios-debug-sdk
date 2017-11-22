@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
-#import <UserNotifications/UserNotifications.h>
+#import <DeltaDNA/DeltaDNA.h>
+#import <DeltaDNAAds/DeltaDNAAds.h>
 
 @interface ViewController ()
 
-- (IBAction)sendDiagnostic:(id)sender;
+- (IBAction)showInterstitial:(id)sender;
+- (IBAction)showRewarded:(id)sender;
 
 
 @end
@@ -22,6 +24,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [DDNASDK setLogLevel:DDNALogLevelDebug];
+    [DDNASDK sharedInstance].clientVersion = @"0.1.0";
+    [DDNASDK sharedInstance].hashSecret = @"KmMBBcNwStLJaq6KsEBxXc6HY3A4bhGw";
+    
+    [[DDNASDK sharedInstance] startWithEnvironmentKey:@"55822530117170763508653519413932"
+                                           collectURL:@"https://collect2010stst.deltadna.net/collect/api"
+                                            engageURL:@"https://engage2010stst.deltadna.net"];
+    
+    [DDNASmartAds sharedInstance].registrationDelegate = self;
+    [[DDNASmartAds sharedInstance] registerForAds];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,26 +43,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)sendDiagnostic:(id)sender {
-    // Launch a notification here for a quick test!
-    UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
-    content.categoryIdentifier = @"com.deltadna.diagnosticCategory";
-    content.title = [NSString localizedUserNotificationStringForKey:@"deltaDNA SDK" arguments:nil];
-    content.body = @"test message!";
-    content.userInfo = @{
-        @"interstitial": @"Loaded INMOBI ad",
-        @"rewarded": @"Loaded Vungle ad"
-    };
-    
-    // When to launch the notification
-    UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
-                                                  triggerWithTimeInterval:1 repeats:NO];
-    
-    // Create the request object to launch the notification.
-    UNNotificationRequest* request = [UNNotificationRequest
-                                      requestWithIdentifier:@"deltaDNA-SDK" content:content trigger:trigger];
-    
-    UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
-    [center addNotificationRequest:request withCompletionHandler:nil];
+- (IBAction)showInterstitial:(id)sender {
+    DDNAInterstitialAd *interstitialAd = [DDNAInterstitialAd interstitialAdWithDelegate:nil];
+    [interstitialAd showFromRootViewController:self];
+}
+
+- (IBAction)showRewarded:(id)sender {
+    DDNARewardedAd *rewardedAd = [DDNARewardedAd rewardedAdWithDelegate:nil];
+    [rewardedAd showFromRootViewController:self];
 }
 @end

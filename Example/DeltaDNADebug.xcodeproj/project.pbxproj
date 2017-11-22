@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		317158C99C3A647E1F6D99E6 /* Pods_Notification_Content.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */; };
+		3CF00CB27E4C28E5D97D8924 /* libPods-DeltaDNADebug_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410EAFBC04E9BAFEAD251CC /* libPods-DeltaDNADebug_Example.a */; };
+		418738CC58047662BA7D4A93 /* libPods-Notification Content.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 451F64E3BE92CF1B919169FC /* libPods-Notification Content.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -28,7 +29,6 @@
 		634F3B6B1FC33D6D001F0242 /* Notification Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 634F3B5C1FC33D6C001F0242 /* Notification Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E41E80CE3501E96A9D2E0B28 /* Pods_DeltaDNADebug_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053A55053364E2C60753B13B /* Pods_DeltaDNADebug_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		053A55053364E2C60753B13B /* Pods_DeltaDNADebug_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNADebug_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1410EAFBC04E9BAFEAD251CC /* libPods-DeltaDNADebug_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaDNADebug_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2597C943508C569B6A4FF479 /* DeltaDNANotifications.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeltaDNANotifications.podspec; path = ../DeltaDNANotifications.podspec; sourceTree = "<group>"; };
+		451F64E3BE92CF1B919169FC /* libPods-Notification Content.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Notification Content.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B55E57F342A75AB1005728 /* Pods_DeltaDNANotifications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1E72923780AD3327C095A1 /* Pods-Notification Content.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BE81CDA5137F3357419DF11 /* Pods-DeltaDNADebug_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAF680DE8AB27811F49E23E0 /* Pods-DeltaDNADebug_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notification_Content.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB901A41F4F9A907D8F59F8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE5D7143C2683441B9B51D8C /* Pods-DeltaDNANotifications_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				E41E80CE3501E96A9D2E0B28 /* Pods_DeltaDNADebug_Example.framework in Frameworks */,
+				3CF00CB27E4C28E5D97D8924 /* libPods-DeltaDNADebug_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 			files = (
 				634F3B601FC33D6C001F0242 /* UserNotificationsUI.framework in Frameworks */,
 				634F3B5E1FC33D6C001F0242 /* UserNotifications.framework in Frameworks */,
-				317158C99C3A647E1F6D99E6 /* Pods_Notification_Content.framework in Frameworks */,
+				418738CC58047662BA7D4A93 /* libPods-Notification Content.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +175,8 @@
 				4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */,
 				634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */,
 				634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */,
-				AFD02E32321AFA299A66B740 /* Pods_Notification_Content.framework */,
-				053A55053364E2C60753B13B /* Pods_DeltaDNADebug_Example.framework */,
+				1410EAFBC04E9BAFEAD251CC /* libPods-DeltaDNADebug_Example.a */,
+				451F64E3BE92CF1B919169FC /* libPods-Notification Content.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle,
+				"$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -478,7 +478,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle,
+				"${PODS_ROOT}/DeltaDNA/DeltaDNA/Resources/iso_4217.xml",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.11.1/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.11.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle",
+				"${PODS_ROOT}/thirdpresence-ad-sdk-ios/ThirdpresenceAdSDK-Info.plist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
