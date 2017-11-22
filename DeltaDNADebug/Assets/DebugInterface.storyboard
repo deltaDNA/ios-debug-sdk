@@ -18,14 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interstitial State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjA-nB-Cab">
-                                <rect key="frame" x="16" y="20" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interstitial State" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjA-nB-Cab">
+                                <rect key="frame" x="16" y="20" width="288" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="CWT-1c-Pl3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewarded State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTH-Cz-dO4">
-                                <rect key="frame" x="16" y="49" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewarded State" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTH-Cz-dO4">
+                                <rect key="frame" x="16" y="69" width="288" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="e2D-lW-zv9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,6 +43,7 @@
                             <constraint firstItem="bjA-nB-Cab" firstAttribute="top" secondItem="Fpy-zO-0g5" secondAttribute="top" constant="20" id="2yz-Mp-QJD"/>
                             <constraint firstItem="ZTH-Cz-dO4" firstAttribute="leading" secondItem="Fpy-zO-0g5" secondAttribute="leading" constant="16" id="4IF-gO-6hp"/>
                             <constraint firstItem="ZTH-Cz-dO4" firstAttribute="top" secondItem="bjA-nB-Cab" secondAttribute="bottom" constant="8" id="9mv-fv-SdE"/>
+                            <constraint firstItem="ZTH-Cz-dO4" firstAttribute="top" secondItem="bjA-nB-Cab" secondAttribute="bottom" constant="8" id="Vfz-S5-le2"/>
                             <constraint firstItem="Fpy-zO-0g5" firstAttribute="trailing" secondItem="ZTH-Cz-dO4" secondAttribute="trailing" constant="16" id="Zfe-1O-3XG"/>
                             <constraint firstItem="Fpy-zO-0g5" firstAttribute="trailing" secondItem="bjA-nB-Cab" secondAttribute="trailing" constant="16" id="h81-cj-YH1"/>
                             <constraint firstItem="bjA-nB-Cab" firstAttribute="leading" secondItem="Fpy-zO-0g5" secondAttribute="leading" constant="16" id="lTJ-W5-aas"/>
@@ -53,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQL-A7-eKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.59999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="137.59999999999999" y="133.13343328335833"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.39576937099999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>

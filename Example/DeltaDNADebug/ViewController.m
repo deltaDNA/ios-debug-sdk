@@ -14,6 +14,7 @@
 
 - (IBAction)showInterstitial:(id)sender;
 - (IBAction)showRewarded:(id)sender;
+- (IBAction)newSession:(id)sender;
 
 
 @end
@@ -33,7 +34,6 @@
                                            collectURL:@"https://collect2010stst.deltadna.net/collect/api"
                                             engageURL:@"https://engage2010stst.deltadna.net"];
     
-    [DDNASmartAds sharedInstance].registrationDelegate = self;
     [[DDNASmartAds sharedInstance] registerForAds];
 }
 
@@ -51,5 +51,9 @@
 - (IBAction)showRewarded:(id)sender {
     DDNARewardedAd *rewardedAd = [DDNARewardedAd rewardedAdWithDelegate:nil];
     [rewardedAd showFromRootViewController:self];
+}
+
+- (IBAction)newSession:(id)sender {
+    [[DDNASDK sharedInstance] newSession];
 }
 @end
