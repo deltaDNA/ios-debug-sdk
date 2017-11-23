@@ -39,11 +39,6 @@
     [self.contentViewController didReceiveNotification:notification];
 }
 
-- (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion
-{
-    
-}
-
 - (UIViewController *)viewControllerForStoryboardWithName:(NSString *)name
 {
     NSBundle *podBundle = [NSBundle bundleForClass:[DDNADebugNotificationViewController class]];

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <DeltaDNA/DeltaDNA.h>
+#import <DeltaDNAAds/DeltaDNAAds.h>
 #import <UserNotifications/UserNotifications.h>
 
 // Allow's us to override notification appearing in the foreground
@@ -86,12 +87,21 @@
 
 #pragma mark - UNUserNotificationCenterDelegate
 
-// Allow diagnostic notifications to appear when in the foreground.
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler
 {
+    // Allow diagnostic notifications to appear when in the foreground.
     if ([notification.request.content.categoryIdentifier isEqualToString:@"com.deltadna.diagnosticCategory"]) {
         completionHandler(UNNotificationPresentationOptionAlert);
     }
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
+{
+    if ([response.actionIdentifier isEqualToString:@"com.deltadna.stopAction"]) {
+        [[DDNADebugListener sharedInstance] disableNotifications];
+    }
+    // Must call the completion handler.
+    completionHandler();
 }
 
 

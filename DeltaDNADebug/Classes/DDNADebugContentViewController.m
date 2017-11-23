@@ -32,11 +32,6 @@
     self.rewardedState.text = notification.request.content.userInfo[@"rewarded"];
 }
 
-- (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion
-{
-    
-}
-
 /*
 #pragma mark - Navigation
 
