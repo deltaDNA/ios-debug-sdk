@@ -39,7 +39,7 @@ end
 
 ### Changes to the AppDelegate in the App
 
-The following istructions assume you're not already using User Notifications, if so you'll need to merge the changes into your own notification handling.
+The following instructions assume you're not already using User Notifications, if so you'll need to merge the changes into your own notification handling.
 
     5. Make the AppDelegate extend the UNUserNotificationCenterDelegate.
     6. Add the following code to register the user notifications we will use.
@@ -87,7 +87,7 @@ The following istructions assume you're not already using User Notifications, if
 
 ## Example
 
-An example is included which shows all the changes that need to be make.  To run the example project, clone the repo, and run `pod install` from the Example directory first.
+An example is included which shows all the changes that need to be made.  To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## License
 
