@@ -23,7 +23,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 target 'MyAppThatUsesSmartAds' do
-    pod 'DeltaDNAAds', '~> 1.6.0'
+    pod 'DeltaDNAAds', '~> 1.7.0'
 end
 
 target 'NotificationContentExtension' do
