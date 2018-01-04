@@ -5,7 +5,13 @@ platform :ios, '10.0'
 #use_frameworks!
 
 target 'DeltaDNADebug_Example' do
-    pod 'DeltaDNAAds', :path => '~/Projects/ios-smartads-sdk'
+    pod 'DeltaDNAAds', '~>1.7.0-beta.1'
+    
+    target 'DeltaDNADebug_Tests' do
+        inherit! :search_paths
+        pod 'Specta', '~>1.0'
+        pod 'Expecta', '~>1.0'
+    end
 end
 
 target 'Notification Content' do

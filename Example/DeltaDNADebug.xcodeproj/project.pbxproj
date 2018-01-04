@@ -20,8 +20,7 @@
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		630376561FFE942100F17A3E /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		634F3B5E1FC33D6C001F0242 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */; };
 		634F3B601FC33D6C001F0242 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */; };
 		634F3B641FC33D6C001F0242 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634F3B631FC33D6C001F0242 /* NotificationViewController.m */; };
@@ -29,6 +28,7 @@
 		634F3B6B1FC33D6D001F0242 /* Notification Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 634F3B5C1FC33D6C001F0242 /* Notification Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		93AB8C971E0DF74C025B20BA /* libPods-DeltaDNADebug_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B73BDD87AF13ED0CA17DDE4 /* libPods-DeltaDNADebug_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,7 @@
 /* Begin PBXFileReference section */
 		1410EAFBC04E9BAFEAD251CC /* libPods-DeltaDNADebug_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaDNADebug_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2597C943508C569B6A4FF479 /* DeltaDNADebug.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeltaDNADebug.podspec; path = ../DeltaDNADebug.podspec; sourceTree = "<group>"; };
+		2B73BDD87AF13ED0CA17DDE4 /* libPods-DeltaDNADebug_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaDNADebug_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451F64E3BE92CF1B919169FC /* libPods-Notification Content.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Notification Content.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B55E57F342A75AB1005728 /* Pods_DeltaDNANotifications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +86,7 @@
 		6003F5AE195388D20070C39A /* DeltaDNADebug_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaDNADebug_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		634F3B5C1FC33D6C001F0242 /* Notification Content.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notification Content.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		634F3B5D1FC33D6C001F0242 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -100,8 +99,10 @@
 		7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BE81CDA5137F3357419DF11 /* Pods-DeltaDNADebug_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example.release.xcconfig"; sourceTree = "<group>"; };
+		927EE418BAC26959B1C848E3 /* Pods-DeltaDNADebug_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Tests/Pods-DeltaDNADebug_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AAF680DE8AB27811F49E23E0 /* Pods-DeltaDNADebug_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B62D5F8CE067BC316E682B7D /* Pods-DeltaDNANotifications_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F4585F2A460BA9EEB666E89F /* Pods-DeltaDNADebug_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNADebug_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNADebug_Tests/Pods-DeltaDNADebug_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB901A41F4F9A907D8F59F8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE5D7143C2683441B9B51D8C /* Pods-DeltaDNANotifications_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNANotifications_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNANotifications_Example/Pods-DeltaDNANotifications_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +126,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				93AB8C971E0DF74C025B20BA /* libPods-DeltaDNADebug_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +179,7 @@
 				634F3B5F1FC33D6C001F0242 /* UserNotificationsUI.framework */,
 				1410EAFBC04E9BAFEAD251CC /* libPods-DeltaDNADebug_Example.a */,
 				451F64E3BE92CF1B919169FC /* libPods-Notification Content.a */,
+				2B73BDD87AF13ED0CA17DDE4 /* libPods-DeltaDNADebug_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,8 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,6 +258,8 @@
 				7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */,
 				AAF680DE8AB27811F49E23E0 /* Pods-DeltaDNADebug_Example.debug.xcconfig */,
 				8BE81CDA5137F3357419DF11 /* Pods-DeltaDNADebug_Example.release.xcconfig */,
+				F4585F2A460BA9EEB666E89F /* Pods-DeltaDNADebug_Tests.debug.xcconfig */,
+				927EE418BAC26959B1C848E3 /* Pods-DeltaDNADebug_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -290,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DeltaDNADebug_Tests" */;
 			buildPhases = (
+				91D9D05B8E55155A10F3FB27 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				14E15646F0356455F736E8CE /* [CP] Embed Pods Frameworks */,
+				13BA5E409CD35D8F35AA1DF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,7 +388,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +402,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13BA5E409CD35D8F35AA1DF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Tests/Pods-DeltaDNADebug_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14E15646F0356455F736E8CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Tests/Pods-DeltaDNADebug_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2652BEBD60AFA5BAACAA33BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,7 +459,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -471,6 +506,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		91D9D05B8E55155A10F3FB27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeltaDNADebug_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E396A22BB97396732CB3BA39 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,6 +532,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-resources.sh",
 				"${PODS_ROOT}/DeltaDNA/DeltaDNA/Resources/iso_4217.xml",
+				"${PODS_ROOT}/FMAdZone/FMAdZoneResources.bundle",
+				"${PODS_ROOT}/LoopMeSDK/LoopMeSDK.embeddedframework/Resources/LoopMeResources.bundle",
 				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.11.1/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
 				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.11.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
@@ -530,7 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				630376561FFE942100F17A3E /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,14 +617,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6003F597195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -702,6 +749,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4585F2A460BA9EEB666E89F /* Pods-DeltaDNADebug_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -710,7 +758,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -725,6 +773,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927EE418BAC26959B1C848E3 /* Pods-DeltaDNADebug_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -733,7 +782,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
