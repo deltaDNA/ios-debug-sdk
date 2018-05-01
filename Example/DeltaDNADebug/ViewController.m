@@ -18,7 +18,7 @@
 #import <DeltaDNA/DeltaDNA.h>
 #import <DeltaDNAAds/DeltaDNAAds.h>
 
-@interface ViewController ()
+@interface ViewController () <DDNASmartAdsRegistrationDelegate>
 
 - (IBAction)showInterstitial:(id)sender;
 - (IBAction)showRewarded:(id)sender;
@@ -38,11 +38,11 @@
     [DDNASDK sharedInstance].clientVersion = @"0.1.0";
     [DDNASDK sharedInstance].hashSecret = @"KmMBBcNwStLJaq6KsEBxXc6HY3A4bhGw";
     
+    [DDNASmartAds sharedInstance].registrationDelegate = self;
+    
     [[DDNASDK sharedInstance] startWithEnvironmentKey:@"55822530117170763508653519413932"
                                            collectURL:@"https://collect2010stst.deltadna.net/collect/api"
                                             engageURL:@"https://engage2010stst.deltadna.net"];
-    
-    [[DDNASmartAds sharedInstance] registerForAds];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,4 +64,28 @@
 - (IBAction)newSession:(id)sender {
     [[DDNASDK sharedInstance] newSession];
 }
+
+#pragma mark - DDNASmartAdsRegistrationDelegate
+
+- (void)didRegisterForInterstitialAds
+{
+    NSLog(@"Did register for interstitial ads.");
+}
+
+- (void)didFailToRegisterForInterstitialAdsWithReason:(NSString *)reason
+{
+    NSLog(@"Did fail to register for interstitial ads: %@.", reason);
+}
+
+- (void)didRegisterForRewardedAds
+{
+    NSLog(@"Did register for rewarded ads.");
+}
+
+- (void)didFailToRegisterForRewardedAdsWithReason:(NSString *)reason
+{
+    NSLog(@"Did fail to register for rewarded ads: %@.", reason);
+}
+
+
 @end

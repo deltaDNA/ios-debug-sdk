@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DeltaDNADebug'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Diagnostics for deltaDNA SDKs.'
 
   s.description      = <<-DESC

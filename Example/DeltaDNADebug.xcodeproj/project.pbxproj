@@ -26,6 +26,7 @@
 		634F3B641FC33D6C001F0242 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634F3B631FC33D6C001F0242 /* NotificationViewController.m */; };
 		634F3B671FC33D6C001F0242 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634F3B651FC33D6C001F0242 /* MainInterface.storyboard */; };
 		634F3B6B1FC33D6D001F0242 /* Notification Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 634F3B5C1FC33D6C001F0242 /* Notification Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63BF38BC209876CD000EA523 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 63BF38BB209876CC000EA523 /* CHANGELOG.md */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		93AB8C971E0DF74C025B20BA /* libPods-DeltaDNADebug_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B73BDD87AF13ED0CA17DDE4 /* libPods-DeltaDNADebug_Tests.a */; };
@@ -64,7 +65,7 @@
 
 /* Begin PBXFileReference section */
 		1410EAFBC04E9BAFEAD251CC /* libPods-DeltaDNADebug_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaDNADebug_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2597C943508C569B6A4FF479 /* DeltaDNADebug.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeltaDNADebug.podspec; path = ../DeltaDNADebug.podspec; sourceTree = "<group>"; };
+		2597C943508C569B6A4FF479 /* DeltaDNADebug.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeltaDNADebug.podspec; path = ../DeltaDNADebug.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B73BDD87AF13ED0CA17DDE4 /* libPods-DeltaDNADebug_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaDNADebug_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451F64E3BE92CF1B919169FC /* libPods-Notification Content.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Notification Content.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7AE772E289EEFED8E53B82 /* Pods_DeltaDNANotifications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaDNANotifications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +95,7 @@
 		634F3B631FC33D6C001F0242 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 		634F3B661FC33D6C001F0242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		634F3B681FC33D6C001F0242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BF38BB209876CC000EA523 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		6910E57F0D825D57A6161BE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FD00A78D694B368D55F4731 /* Pods-Notification Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Content.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				63BF38BB209876CC000EA523 /* CHANGELOG.md */,
 				2597C943508C569B6A4FF479 /* DeltaDNADebug.podspec */,
 				6910E57F0D825D57A6161BE3 /* README.md */,
 				FB901A41F4F9A907D8F59F8F /* LICENSE */,
@@ -275,7 +278,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				2652BEBD60AFA5BAACAA33BB /* [CP] Embed Pods Frameworks */,
 				E396A22BB97396732CB3BA39 /* [CP] Copy Pods Resources */,
 				634F3B6F1FC33D6D001F0242 /* Embed App Extensions */,
 			);
@@ -297,8 +299,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				14E15646F0356455F736E8CE /* [CP] Embed Pods Frameworks */,
-				13BA5E409CD35D8F35AA1DF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -378,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				63BF38BC209876CD000EA523 /* CHANGELOG.md in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -402,56 +403,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13BA5E409CD35D8F35AA1DF8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Tests/Pods-DeltaDNADebug_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		14E15646F0356455F736E8CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Tests/Pods-DeltaDNADebug_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2652BEBD60AFA5BAACAA33BB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DeltaDNA/DeltaDNA.framework",
-				"${BUILT_PRODUCTS_DIR}/DeltaDNADebug/DeltaDNADebug.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNA.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeltaDNADebug.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaDNADebug_Example/Pods-DeltaDNADebug_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3F526E1BF191B443FC2A866B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,11 +410,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Notification Content/Pods-Notification Content-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/DeltaDNADebug/DeltaDNADebug.bundle,
+				"${PODS_CONFIGURATION_BUILD_DIR}/DeltaDNADebug/DeltaDNADebug.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DeltaDNADebug.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -561,7 +512,32 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/iso_4217.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FMAdZoneResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LoopMeResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ThirdpresenceAdSDK-Info.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

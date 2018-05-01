@@ -29,6 +29,18 @@ end
 target 'NotificationContentExtension' do
     pod 'DeltaDNADebug', '~> 1.0.0'
 end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            # Enable debug notifications
+            if target.name == 'DeltaDNAAds'
+                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'DDNA_DEBUG_NOTIFICATIONS=1'
+            end
+        end
+    end
+end
 ```
     
 ## Changes to the Notification Extension Target
